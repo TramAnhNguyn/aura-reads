@@ -1,0 +1,128 @@
+.homepage { padding: 0 4rem; }
+
+.hero { 
+    background-color: #3b5249; 
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    border-radius: 12px; 
+    margin-bottom: 3rem;
+    position: relative;
+    transition: background-image 1s ease-in-out;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 3rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+.genre-grid { 
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 1rem; 
+    margin-bottom: 4rem; 
+}
+
+.genre-card { 
+    padding: 2rem; 
+    border-radius: 8px; 
+    color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.genre-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.promo-banner { 
+    background: linear-gradient(135deg, #3b5249 40%, #403e0a 100%);
+    color: white; 
+    padding: 3rem 4rem;
+    border-radius: 12px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;            
+    margin: 4rem 0;
+    gap: 2rem;                     
+}
+
+.promo-content-left {
+    flex: 1;           
+    max-width: 70%;    
+    text-align: left;
+}
+
+.promo-content-right {
+    flex-shrink: 0;   
+}
+
+.promo-content-right .join-btn {
+    background: #ab7a35; 
+    color: rgb(0, 0, 0); 
+    border: none; 
+    padding: 8px 15px; 
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Sections */
+.book-list { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 2rem; 
+    margin-bottom: 4rem; 
+}
+
+.section-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-end; 
+    margin-bottom: 2rem; 
+}
+
+.section-overline { 
+    color: #a04a32; 
+    font-size: 0.75rem; 
+    letter-spacing: 1px; 
+}
+
+.genre-grid :hover {
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .genre-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .book-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .homepage {
+        padding: 0 1rem;
+    }
+    .genre-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .book-list {
+        grid-template-columns: 1fr;
+    }
+    .promo-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+    .promo-content-left {
+        max-width: 100%;
+        text-align: center;
+    }
+}

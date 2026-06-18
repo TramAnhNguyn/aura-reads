@@ -1,0 +1,27 @@
+.developing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 2rem;
+    text-align: center;
+}
+
+.developing-content {
+    background: #fdfbf7;
+    padding: 4rem;
+    border-radius: 12px;
+    border: 1px solid #e5e4e7;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.developing-content h1 {
+    color: #a04a32;
+    margin-bottom: 1rem;
+}
+
+.developing-content p {
+    color: #6b6375;
+    margin-top: 80px;
+    font-size: 1.1rem;
+}
