@@ -2,9 +2,6 @@
 
 Aura Reads is a modern, responsive, and fully functional front-end e-commerce application built with React.js. It features a sleek user interface, dynamic product filtering, seamless global state management for the shopping bag, and customized user interactions.
 
-## 🚀 Live Demo & Screenshots
-*(You can add screenshots or deployment links here)*
-
 ## ✨ Key Features
 
 - **Responsive Design**: Built entirely with pure CSS (Flexbox & Grid), ensuring a pixel-perfect experience across Desktop, Tablet, and Mobile devices.
